@@ -39,11 +39,11 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>o</strong> Wine.</h2>
+                    <h2 class="logo-font text-black my-0"><strong>Boutique</strong> Ado</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
@@ -94,7 +94,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
@@ -105,11 +104,11 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <!--<div id="delivery-banner" class="row text-center">
+        <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
+                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>                
             </div>            
-        </div>-->
+        </div>
     </header>
 
     {% if messages %}
@@ -125,6 +124,6 @@
     {% block postloadjs %}
     {% endblock %}
 
-
+    
   </body>
 </html>
