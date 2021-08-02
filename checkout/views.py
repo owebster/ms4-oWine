@@ -10,7 +10,7 @@ def checkout(request):
         messages.error(request, "there's nothing in your bag at the moment")
         return redirect(reverse('products'))
     
-    order_form = ORderForm()
+    order_form = OrderForm()
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
