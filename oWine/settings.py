@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-mdn&v!+r__*9&2iy24o$w@1o-0&sz$04hi4t(ip-j^$6&g^9yi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ms4-owine.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -120,16 +120,21 @@ WSGI_APPLICATION = 'oWine.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path(BASE_DIR / 'db.sqlite3'),
+        }
+    }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://zovjbdfzyotsci:295b224752c8a50d0fc4356af90f6715f8253835336c20b502c107b5efa28917@ec2-52-208-221-89.eu-west-1.compute.amazonaws.com:5432/d3md4th45hj7no')
-}
+# DATABASES = {
+    #'default': dj_database_url.parse('postgres://zovjbdfzyotsci:295b224752c8a50d0fc4356af90f6715f8253835336c20b502c107b5efa28917@ec2-52-208-221-89.eu-west-1.compute.amazonaws.com:5432/d3md4th45hj7no')
+#}
 
 
 # Password validation
