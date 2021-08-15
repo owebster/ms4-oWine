@@ -107,6 +107,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.rounded-0 {
+    border-radius: 50px!important;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
