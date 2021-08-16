@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: url('/media/red_wine.jpg') no-repeat center center fixed;
+	background-image: url('/media/red_wine.jpg') no-repeat center center fixed;
     /*background-color: #4b0000;*/
 	background-size: cover;
     height: calc(100vh - 164px);
