@@ -3,8 +3,8 @@ html {
 }
 
 body {
-	background: url('/media/red_wine.jpg') no-repeat center center fixed !important;
-    /*background-color: #4b0000;*/
+	/*background: url('/media/red_wine.jpg') no-repeat center center fixed !important;*/
+    background-color: #4b0000;
 	background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
