@@ -4,8 +4,8 @@ A site to view and buy alcohol
 <img src="" alt="Image of screen-mockup on desktop, tablet and mobile screen sizes" />
 
 ## An Overview
-For my third milestone project I have chosen to build a small teams messaging platform for small teams and businesses to stay in touch with each other. This project is built using HTML, CSS, Javascript, python, mongoDB and accompanying frameworks. Show casing mobile first design, usage of API's and also a backend framework for users to interact with the site.
-I decided on building a site for small businesses or teams to be able to easily message each other because of how much time we have spent at home over the past year. This site gives a basic and easy way for people to keep in touch and utilise it like a digital white board.
+For my final milestone project I have chosen to build a site to view and purchase alcohol. This project is built using HTML, CSS, Javascript, Python, Flask and Django. Show casing mobile first design, usage of multiple "apps" and also a backend framework to handle customer accounts, purchases and product management.
+I decided on building a site for users to view and purchase wines and whiskys, which also allows the site managers to manage inventory.
 
 In this document I will go through what I've built and why, as well as future goals and testing that's been done to make sure this site is functional in what it offers as well as across multiple device types, from mobile to desktop.
 
