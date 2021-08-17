@@ -1,59 +1,246 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# MS4-oWine
+A site to view and buy alcohol
 
-Welcome owebster,
+<img src="" alt="Image of screen-mockup on desktop, tablet and mobile screen sizes" />
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## An Overview
+For my third milestone project I have chosen to build a small teams messaging platform for small teams and businesses to stay in touch with each other. This project is built using HTML, CSS, Javascript, python, mongoDB and accompanying frameworks. Show casing mobile first design, usage of API's and also a backend framework for users to interact with the site.
+I decided on building a site for small businesses or teams to be able to easily message each other because of how much time we have spent at home over the past year. This site gives a basic and easy way for people to keep in touch and utilise it like a digital white board.
 
-## Gitpod Reminders
+In this document I will go through what I've built and why, as well as future goals and testing that's been done to make sure this site is functional in what it offers as well as across multiple device types, from mobile to desktop.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+View a live version of my site [here](https://ms4-owine.herokuapp.com/)
 
-`python3 -m http.server`
+## Table of content
+   * [UX](#ux) 
+   * [UI](#ui)
+   * [Objectives](#objectives)
+      * [For The Site Owner](#for-the-site-owner)
+      * [For The User](#for-the-user)
+   * [Wireframe](#wireframe)
+   * [Scope](#scope)
+      * [Start](#start)
+      * [Middle](#middle)
+      * [Ongoing](#ongoing)
+   * [User Stories](#user-stories)
+   * [Technologies Used](#technologies-used)
+   * [Feature and Technology Testing](#feature-and-technology-testing)
+   * [Further Testing](#further-testing)
+   * [Deployment](#deployment)
+   * [Credits](#credits)
 
-A blue button should appear to click: _Make Public_,
+## UX
+### The Experience:
+I wanted to create a site which has animalistic and clean look. It has a modern colour tone which is calming and the removal of a standard white background, it creates a unique look.
+Corners are rounded on most UI elements and even the Navigation Bar at the top is separated from the top to create a different look.
 
-Another blue button should appear to click: _Open Browser_.
+### Journey of the Site:
+As a new user with no account, you are greeted with a run down on what the site is and what you can expect from using this website.
+From there you can see the different tiers that are offered and what features a user can expect from different tiers.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The login page is present for users that have already been signed up and there is a contact page tab for users to reach out for more information.
 
-A blue button should appear to click: _Make Public_,
+Once reached out to the developer, users will be have an admin account created for them. As an admin you can create and delete users, see what users are in your team as well as all the functions of a standard user, such as creating messages, seeing your basic profile page and any future options.
 
-Another blue button should appear to click: _Open Browser_.
+Messaging section:
+* Nice and simple feature where users can utilise the site as a digital white board. In times where we're spending more time at home, this is a great options for users to collaborate ideas like they might do on a meeting room whiteboard.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+User sections (admin access)
+* This is a place where the admin can view everyone's name and user name. Quick and easy place for admins to check in on their team's details
 
-To log into the Heroku toolbelt CLI:
+Management section
+* this is treated like a homepage once someone has logged in. 
+    
+    * For admins, it is a place to view their users, create new users and to check their own profile. 
+        * Within the User section (explained above) managers can also remove users from the space if someone changes or is no longer with the team
+        * The new user section is a sign-up page for admins to create new users by entering their name, username and password
+        * The profile page is similar to the one for basic users where it's a quick stop to check if you're signed into the right account.
+    
+    * For standard users, this is treated as a basic home screen to easily access their own profile as a welcome screen.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Colours:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+#EDF6F9 - This is used as the base background colour of the site to stand out from other white background based sites.
 
-## Updates Since The Instructional Video
+#006D77 - This is a darker variant of the background colour to create a familiar tone but offers contrast not only for an accessibility point of view but also for general viewing.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#BADEDA - This is an in between colour between the top two colours. This is used for hover style colours to again be different to being just white. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#FFDDD2 - This colour offers a change in the colour pallet so is mainly used for text colouring to offer the text a bit of a "pop" out moment.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#E29578 - Offering the starkest difference in colour, this orangy colour is used for hover states on assets that use #FFDDD2 as a font colour
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## UI 
+### The Interface:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The site is built to be modern and mobile first. Its features are also supported across multiple browsers. This is shown in different parts of the site:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* The nav bar features a disjointed design where it's not connected to the top of the site like normal nav bars typically do. It is scalable and changes accordingly to device and screen size to what it shows.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* The messaging section is treated like sticky notes on a white board. On a large screen device it holds two notes side by side. 
+    * On mobile / small screen devices, it shows the messages in a list view that is available to scroll, this is done with `col-12` on small devices.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* The management page differs between different users but the UI is similar across the board. Different sections withing the management page are separated by individual cells that span across the container with `col-12`. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* The profile page features a nice and basic `jumbotron` that floats in the middle of the page. This is designed to quickly let users see if they're logged into the right account.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
----
+## Objectives
+### For the Site Owner:
+For the site owner, the main objective is to get more people signing up to accounts and for people on the base tier to sign up for the higher tiers. With extra features that can be built on top of the higher tiers, this will drive users who start off with the base tier to upgrade. 
+The other objective for the site owner is to ensure users get a smooth experience whilst collaborating with their team.
+Ensuring accounts admin creates are functional and there are little to no down time for seamless collaboration.
 
-Happy coding!
+### For the User:
+For the user the main goal is to have an easy to use interface to talk and share ideas with their team members, no matter the size.
+Another objective would be to have the ability for admins / managers to easily talk to their team members without the need for video calls.
+
+## Wireframe:
+For my wireframes, I used Balsamiq Wireframes to mockup and create the site in different device sizes. Shown below are the different wireframes for Mobile, Tablet and Desktop. I started with the mobile site and worked from there to scale up the design. You can click on the image for a larger size.
+
+<img src="static/assets/small.png" alt="Wireframes of small sizing" style="zoom:50%;" />
+<img src="static/assets/medium.png" alt="Wireframes of medium sizing" style="zoom:50%;" />
+<img src="static/assets/large.png" alt="Wireframes of large screen sizing" style="zoom:50%;" />
+
+## Accessibility
+The site was built with accessibility needs in mind. 
+   * All images have the correct alt tags
+   * Colours throughout the site offer contrast from on another to ensure easier readability
+   * Tested with Lighthouse to improve and fix accessibility concerns
+
+## Scope
+### Start
+At the planning stage of this project, I planned out the features that I wanted to implement and chose the colour scheme of the site. This was then plotted down on my wireframe to give a skeleton look of where everything would go.
+Planning:
+* Message board feature
+* The ability to create users
+* The ability for admins to delete users
+UI/UX.
+* With the basic HTML skeleton I layed out
+    * The admin section
+    * Messaging section
+    * Connected to MongoDB and imported the relevant frameworks (flask)
+
+### Middle
+* Content and connection
+    * After connecting MongoDB, I started testing the implementation of the mongoDB data with manual entry directly within MongoDB's site and then moved onto building a user input option on my project to inject and remove data at will
+        * I created the messaging section where users can post notes to a digital messaging board
+        * I created the admin functionality where admins can create new users to join their team
+        * Deletion functionality was added as well for admins to remove team members from their team
+        * A profile page was added for users to check if they're logged into the right account.
+* Styling
+    * Colour style for the site is mentioned above, I have chosen these colours to create a calm and relaxing tone for users to work with whilst they're collaborating with each other.
+    * The style of the page like mentioned above is suppose to feel like it's modern and different. Which is why the nav bar is not connected to the top of the page and all elements are rounded off to fit the device types we use these days
+
+### Ongoing
+* For future ideas to add on for the different tier plans, I want to build:
+    * Direct to person messaging
+    * Further addition to profile page
+    * File upload for message board
+
+## User Stories
+* As an Admin I expect to be able to:
+    * Create new users
+    * Send messages to the team
+    * Remove users 
+    * Have a space where it's easy to use and understand
+
+## Technologies used:
+* HTML5
+* CSS
+* [Bootstrap](https://getbootstrap.com/) - for structure and extra features of the site
+* [Fontawesome](https://fontawesome.com/)
+* Javascript
+   * [Jquery](https://jquery.com)
+* [EmailJS](https://www.emailjs.com/)
+* Python
+* [MongoDB](https://www.mongodb.com/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+
+## Feature and Technology Testing
+### Manual testing:
+Each feature set was tested on mobile, medium and large screen, natively and also via developer inspection on Chrome and Safari.
+- Log in functionality
+- Create user functionality
+- Contact form
+- User interface and scalability of elements on site
+- Messaging functionality
+- Delete message functionality
+- Delete user functionality
+- Individual log in functionality for users that are not admins
+
+## Further Testing:
+### HTML
+All HTML code has gone through https://validator.w3.org/ and no errors occur
+
+### CSS
+All CSS was tested using direct input with https://jigsaw.w3.org and no errors were returned
+
+### JS
+All Javascript has been passed through https://jshint.com and no errors occurred
+
+### Python
+All python has been passed through http://pep8online.com/ and passed
+
+### Known issues
+Currently the contact us section is functional, but does not notify the user that their request has been sent - working on a fix.
+
+### Chrome developer tools
+When building the site, during each section I used Chrome's inspect and developer tools (such as lighthouse) to validate my work and to ensure the site worked across multiple screen sizes.
+This was also used to debug any structural and styling issues on the fly
+
+### Buttons and Links
+All buttons and links have been accounted for and directs to the right source
+
+## Deployment:
+During this project, I made sure that I spent some of my time focusing on how to properly manage and deploy my project. I used my own IDE (VSCode), Github's desktop app and the IDE's (VS Code) terminal to create branches, test and deploy my code. I primarily did my work in my testing branch as I knew that I would commit to my main branch closer to the time I made my site public. Within the IDE:
+
+I used the built in terminal to get git status, git add, git commits and git push
+Within Github's desktop app:
+
+I used to push to github and change/create branches when I wanted to test out new features / layouts. An example of this was when I was creating the hero carousel and wanted to test how different screen sizes would affect the provided images
+
+- Code has been published to github using git and terminal.
+- Code history is managed via github as well.
+- Site is deployed to heroku - http://tinyschedule.herokuapp.com
+
+
+## Credits:
+   * [Bootstrap](https://getbootstrap.com/)
+   * [ColorTools](https://www.colortools.net/color_complementary.html) for picking complementary and contrasting colours
+   * My mentor Spencer for helping me along the way on my first project.
+   * Kevin from Code Institute with help on the edit function in the message section
+   * [W3School](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp) for safari smooth scrolling: 
+      ``` 
+      $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+         // Make sure this.hash has a value before overriding default behaviour
+         if (this.hash !== "") {
+            // Prevent default anchor click behaviour
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behaviour)
+            window.location.hash = hash;
+            });
+         } // End if
+      });
+      });
+      ```
+   * [Favicon](https://favicon.io/emoji-favicons/flag-wales/) for favicon generator
+   * [W3School](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) for back to top button
+   * Dev Ed on youtube for tutorial on Javascript
+   * [Markdown Tables](https://www.tablesgenerator.com/markdown_tables) for generating markdown table template
+
+### [Back to Top](#an-overview)
