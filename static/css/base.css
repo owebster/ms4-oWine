@@ -179,6 +179,11 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+.img-fluid {
+    width: auto !important;
+    height: 250px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
