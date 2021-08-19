@@ -3,10 +3,10 @@ html {
 }
 
 body {
-	background: url("/media/wine_background.png") no-repeat center center fixed !important;
+	/*background: url("/media/wine_background.png") no-repeat center center fixed !important;*/
     background-color: #4b0000;
 	background-size: cover;
-    /*height: calc(100vh - 164px);*/
+    height: calc(100vh - 164px);
     color: #555;
     font-family: "Lato";
 }
