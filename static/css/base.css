@@ -8,7 +8,7 @@ body {
 	background-size: cover;
     height: calc(100vh - 164px);
     color: #fff;
-    font-family: "Lato";
+    font-family: "Helvetica";
 }
 
 /* from Bulma */
