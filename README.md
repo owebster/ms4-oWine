@@ -31,7 +31,7 @@ View a live version of my site [here](https://ms4-owine.herokuapp.com/)
 
 ## UX
 ### The Experience:
-I wanted to create a site which has animalistic and clean look. It has a modern colour tone which is calming and the removal of a standard white background, it creates a unique look.
+I wanted to create a site which has animalistic and clean look. It has a modern colour tone which is calming but reminds the user of the colours of red wine.
 Corners are rounded on most UI elements and even the Navigation Bar at the top is separated from the top to create a different look.
 
 ### Journey of the Site:
