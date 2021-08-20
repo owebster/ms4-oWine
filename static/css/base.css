@@ -290,7 +290,7 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 
-    .navbar {
+    .navbar-curve {
         border-bottom-left-radius:50% 50%;
         border-bottom-right-radius:50% 50%;
     }
