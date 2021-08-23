@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+​
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+​
+{% block content %}
+    <!-- Removes background image from base.html -->
+    <div class="overlay"></div>
+​
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2 class="mb-0 text-center">
+                    <u>{{ blogpost.title }}</u><br> 
+                </h2> 
+                <h4 class="text-center">
+                by  {{ blogpost.user|title }}  on  {{ blogpost.created }}
+                </h4>
+            </div>
+        </div>
+    </div>
+​
+    <div class="card-body">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">                
+                    <h5>
+                        {{ blogpost.body_text|linebreaks }}
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+​
+    <div>
+        <h5 class="text-center text-black font-weight-bold mt-5">User Comments:</h5>
+        <hr>
+        {% for c in comment %}
+        <div class="text-center text-black my-5">
+            <p>{{c.comment|linebreaks}}</p>
+                <div class="col-4 offset-4">
+                    <hr>
+                </div>
+                <span class="font-italic">Posted by: {{ c.user|title }} on {{c.created_at}}</span>
+​
+                <hr>
+            
+        </div>
+        {% endfor %}
+​
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <h5 class="text-center">Post comment:</h5>
+                    <!-- Comment form -->
+                        <form action="{% url 'blog_detail' blogpost.id %}" method="post" enctype="multipart/form-data" class="form" >
+                            {% csrf_token %}
+                            {% for field in form %}
+                                {{ field | as_crispy_field }}
+                            {% endfor %}
+                            <a  href="{% url 'blog' %}" class="btn btn-outline-blue rounded-0">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="font-weight-bold">Return to blogs</span>
+                            </a>
+                            <button type="submit" id="submit-button" class="btn btn-blue rounded-0 float-right">
+                                <span class="font-weight-bold">Submit</span>
+                                <span class="icon">
+                                    <i class="fas fa-envelope-square"></i>
+                                </span>
+                            </button>
+                        </form>
+                </div>
+​
+            </div>
+        </div>
+    </div>
+​
+{% endblock %}
