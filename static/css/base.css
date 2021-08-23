@@ -112,8 +112,12 @@ input[name='q']::placeholder {
     border-radius: 50px!important;
 }
 
-.fas .fa-chevron-circle-down {
+a > .fa-chevron-circle-down {
     color: #fff;
+}
+
+p{
+    color: #4b0000 !important;
 }
 
 /* ------------------------------- bootstrap toasts */
