@@ -13,11 +13,12 @@ def view_blog(request):
 
     blogpost = BlogPost.objects.all()
 
+    template = 'blog/blog.html'
     context = {
         'blogpost': blogpost,
     }
 
-    return render(request, 'blog/blog.html', context)
+    return render(request, template, context)
 
 
 def blog_detail(request, blog_id):
