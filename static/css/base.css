@@ -8,10 +8,25 @@ body {
     background-color: #4b0000;
 	background-size: cover;
     height: calc(100vh - 164px);
-    color: #fff;
+    color: rgb(39, 39, 16);
     font-family: "Helvetica";
 }
 
+.home-info-text {
+    color: #fff;
+}
+
+.comments-card {
+    padding: 1rem;
+}
+
+#headingOne > a{
+    color: #4b0000;
+}
+
+#headingOne > a:hover{
+    text-decoration: none;
+}
 /* from Bulma */
 .icon {
     align-items: center;

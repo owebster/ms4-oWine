@@ -12,7 +12,7 @@
 {% block content %}
     {% for blog in blogpost %}
     <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-10 col-sm-6 comments-card">
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <a href="{% url 'blog_detail' blog.id %}">
@@ -21,7 +21,7 @@
                             {{ blog.title }}  
                         </h2>
                         <h4>
-                            by  {{ blog.user|title }}  on  {{ blog.created }}
+                            by {{ blog.user|title }}
                         </h4>
                     </a>
                 </div>
