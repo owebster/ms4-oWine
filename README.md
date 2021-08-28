@@ -156,6 +156,12 @@ Comment on blogs
 * SQLite
 
 ## Feature and Technology Testing
+
+For Admin access to the page to assit with testing:
+
+Username: owebster
+Password: password
+
 ### Manual testing:
 Each feature set was tested on mobile, medium and large screen, natively and also via developer inspection on Chrome and Safari.
 Log in functionality
@@ -178,8 +184,6 @@ All Javascript has been passed through https://jshint.com and no errors occurred
 
 ### Python
 All python has been passed through http://pep8online.com/ and passed
-
-### Known issues
 
 
 ### Chrome developer tools
