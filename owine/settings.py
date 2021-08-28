@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mdn&v!+r__*9&2iy24o$w@1o-0&sz$04hi4t(ip-j^$6&g^9yi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
 ALLOWED_HOSTS = ['ms4-owine.herokuapp.com', 'localhost']
@@ -50,8 +50,8 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'blog',
-    
-    #other
+
+    # other
     'crispy_forms',
     'storages',
 ]
@@ -81,7 +81,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -98,7 +98,7 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
-    # Needed to login by username in Django admin, regardless of `allauth`
+# Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
@@ -123,7 +123,7 @@ WSGI_APPLICATION = 'owine.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-       'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -133,13 +133,6 @@ else:
         }
     }
 
-#DATABASES = {
-#    'default': dj_database_url.parse('postgres://zovjbdfzyotsci:295b224752c8a50d0fc4356af90f6715f8253835336c20b502c107b5efa28917@ec2-52-208-221-89.eu-west-1.compute.amazonaws.com:5432/d3md4th45hj7no')
-#}
-
-
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -213,7 +206,7 @@ if 'USE_AWS' in os.environ:
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-#stripe
+# stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
