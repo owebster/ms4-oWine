@@ -196,7 +196,7 @@ I used to push to github and change/create branches when I wanted to test out ne
 
 - Code has been published to github using git and terminal.
 - Code history is managed via github as well.
-- Site is deployed to heroku - http://tinyschedule.herokuapp.com
+- Site is deployed to heroku - https://ms4-owine.herokuapp.com
 
 
 ## Credits:
