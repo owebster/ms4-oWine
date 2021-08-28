@@ -24,9 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-mdn&v!+r__*9&2iy24o$w@1o-0&sz$04hi4t(ip-j^$6&g^9yi'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['ms4-owine.herokuapp.com', 'localhost']
 

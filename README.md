@@ -211,6 +211,19 @@ I used to push to github and change/create branches when I wanted to test out ne
 - Code history is managed via github as well.
 - Site is deployed to heroku - https://ms4-owine.herokuapp.com
 
+Within Heroku's deployment:
+The config files used for this project:
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- DATABASE_URL
+- EMAIL_HOST_PASS
+- EMAIL_HOST_USER
+- STRIPE_PUBLIC_KEY
+- STRIPE_SECRET_KEY
+- STRIPE_WH_SECRET
+- USE_AWS
+
+
 
 ## Credits:
    * [Bootstrap](https://getbootstrap.com/)
