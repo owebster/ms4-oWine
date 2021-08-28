@@ -151,6 +151,9 @@ Comment on blogs
 * Django
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* AWS
+* Balsamiq
+* SQLite
 
 ## Feature and Technology Testing
 ### Manual testing:
