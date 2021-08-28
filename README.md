@@ -147,7 +147,6 @@ Comment on blogs
 * [Fontawesome](https://fontawesome.com/)
 * Javascript
    * [Jquery](https://jquery.com)
-* [EmailJS](https://www.emailjs.com/)
 * Python
 * Django
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
