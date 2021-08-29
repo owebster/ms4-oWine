@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-mdn&v!+r__*9&2iy24o$w@1o-0&sz$04hi4t(ip-j^$6&g^9yi
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['ms4-owine.herokuapp.com', 'localhost', 'http://techsini.com/multi-mockup/index.php']
+ALLOWED_HOSTS = ['ms4-owine.herokuapp.com', 'localhost', 'http://techsini.com/multi-mockup/']
 
 
 # Application definition
