@@ -1,7 +1,7 @@
 # MS4-oWine
 A site to view and buy alcohol
 
-<img src="" alt="Image of screen-mockup on desktop, tablet and mobile screen sizes" />
+<img src="media/website_ns4.gif" alt="Gif of website's basic function of item page and adding to basket" />
 
 ## An Overview
 For my final milestone project I have chosen to build a site to view and purchase alcohol. This project is built using HTML, CSS, Javascript, Python, Flask and Django. Show casing mobile first design, usage of multiple "apps" and also a backend framework to handle customer accounts, purchases and product management.
