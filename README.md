@@ -35,6 +35,8 @@ I wanted to create a site which has minimalistic and clean look. It has a modern
 Corners are rounded on most UI elements and even the Navigation Bar at the top is separated from the top to create a different look, the aim to remind the user about a bottle.
 
 ### Journey of the Site:
+<img src="media/site_diagram.jpg" alt="flowchart of the site" />
+
 As a new user, you’re greeted with a basic welcome screen which differs to other purchasing sites where it screams products at your face. This feels more subtle and friendly allowing users to explore on their own accord yet still being able to easily purchase items
 
 You’re able to select different sections of the site via the nav bar which is present throughout the site no matter the screen size.
@@ -76,6 +78,8 @@ The site is built to be modern and mobile first. Its features are also supported
 The item sections have proportionate images which scale between device sizes and always gives the customer a clear view on what they’re purchasing
 
 * Admin management and item added section supports different file type uploads, whether you’re adding images from a mobile device or desktop
+
+* I opted for no footer for the site to make it a more flowing look, a "no ending" sort of look which is what customers want to wards the bottom of a bottle, they dont want it to end!
 
 
 
