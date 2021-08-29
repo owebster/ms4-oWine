@@ -135,12 +135,13 @@ Similar email confirmation is used for emailing order details
     * add blog posts
     * Remove products 
     * Have a space where it's easy to use and understand
-As a user I expect to be able to:
-Purchase products
-Sign up for an account
-See my orders
-Sort through products in different ways
-Comment on blogs
+
+* As a user I expect to be able to:
+   * Purchase products
+   * Sign up for an account
+   * See my orders
+   * Sort through products in different ways
+   * Comment on blogs
 
 ## Technologies used:
 * HTML5
