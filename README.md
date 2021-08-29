@@ -58,6 +58,8 @@ Blog:
 
 #fff - is used for the rest of the site as a basic overlay colour. Which acts as a nice contrast to the base colour of the site
 
+<img src="media/Screenshot 2021-08-29 at 13.08.51.png" alt="Image of primary colours for the site, a wine red and a british racing green as complementary colours" />
+
 
 ## UI 
 ### The Interface:
