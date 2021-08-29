@@ -88,6 +88,8 @@ For the user, I want to be able to see a new selection of drinks so when I’m d
 ## Wireframe:
 For my wireframes, I used Balsamiq Wireframes to mockup and create the site in different device sizes. Shown below are the different wireframes for Mobile, Tablet and Desktop. I started with the mobile site and worked from there to scale up the design. You can click on the image for a larger size.
 
+Shown are the product page where most customer interactions are done as well as the comments page where customers can interact with one and other
+
 <img src="" alt="Wireframes of small sizing" style="zoom:50%;" />
 <img src="" alt="Wireframes of medium sizing" style="zoom:50%;" />
 <img src="" alt="Wireframes of large screen sizing" style="zoom:50%;" />
@@ -192,6 +194,22 @@ This was also used to debug any structural and styling issues on the fly
 
 ### Buttons and Links
 All buttons and links have been accounted for and directs to the right source
+
+### UI Testing
+| Large Screen - Desktop |                  | No UI issues |
+|------------------------|------------------|--------------|
+|                        |                  |              |
+| Phone:                 | iPhone X         | No UI issues |
+|                        | iPhone 8Plus     | No UI issues |
+|                        | iPhone 6         | No UI issues |
+|                        | iPhone SE        | No UI issues |
+|                        | Pixel 2          | No UI issues |
+|                        | Galaxy Fold      | No UI issues |
+|                        | Surface Duo      | No UI issues |
+|                        |                  |              |
+| Tablet:                | iPad             | No UI issues |
+|                        | iPad Pro         | No UI issues |
+|                        | iPad - Landscape |              |
 
 ## Deployment:
 During this project, I made sure that I spent some of my time focusing on how to properly manage and deploy my project. I used the GitPod IDE, Github's desktop app and the IDE's terminal to create branches, test and deploy my code. I primarily did my work in my testing branch as I knew that I would commit to my main branch closer to the time I made my site public. Within the IDE:
