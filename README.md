@@ -99,9 +99,12 @@ For my wireframes, I used Balsamiq Wireframes to mockup and create the site in d
 
 Shown are the product page where most customer interactions are done as well as the comments page where customers can interact with one and other
 
-<img src="" alt="Wireframes of small sizing" style="zoom:50%;" />
-<img src="" alt="Wireframes of medium sizing" style="zoom:50%;" />
-<img src="" alt="Wireframes of large screen sizing" style="zoom:50%;" />
+<img src="media/Phone.png" alt="Wireframes of small sizing" style="zoom:50%;" />
+<img src="media/Phone copy.png" alt="Wireframes of small sizing on blog section" style="zoom:50%;" />
+<img src="media/Tablet.png" alt="Wireframes of medium sizing" style="zoom:50%;" />
+<img src="media/Tablet copy.png" alt="Wireframes of medium sizing on blog section" style="zoom:50%;" />
+<img src="media/Desktop.png" alt="Wireframes of large screen sizing" style="zoom:50%;" />
+<img src="media/Desktop copy.png" alt="Wireframes of large screen sizing on blog section" style="zoom:50%;" />
 
 ## Accessibility
 The site was built with accessibility needs in mind. 
