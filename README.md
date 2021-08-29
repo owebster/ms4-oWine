@@ -210,7 +210,7 @@ All buttons and links have been accounted for and directs to the right source
 |                        |                  |              |
 | Tablet:                | iPad             | No UI issues |
 |                        | iPad Pro         | No UI issues |
-|                        | iPad - Landscape |              |
+|                        | iPad - Landscape | No UI issues |
 
 ## Deployment:
 During this project, I made sure that I spent some of my time focusing on how to properly manage and deploy my project. I used the GitPod IDE, Github's desktop app and the IDE's terminal to create branches, test and deploy my code. I primarily did my work in my testing branch as I knew that I would commit to my main branch closer to the time I made my site public. Within the IDE:
