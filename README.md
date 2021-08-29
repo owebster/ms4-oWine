@@ -56,6 +56,9 @@ Blog:
 
 #4b0000 - This is used as the primary colour of the site. It has a redness that is similar to red wine which is used to remind users about the site they’re on. This is also used for accent colours on top of white overlays, to bring the core colour through to the rest of the site.
 
+	
+#004B4B - Is used as a complementary colour to #4b0000, the green is close to a scottish green which ties in nicely to the whisky on the site as it's orignally from Scotland
+
 #fff - is used for the rest of the site as a basic overlay colour. Which acts as a nice contrast to the base colour of the site
 
 <img src="media/Screenshot 2021-08-29 at 13.08.51.png" alt="Image of primary colours for the site, a wine red and a british racing green as complementary colours" />
