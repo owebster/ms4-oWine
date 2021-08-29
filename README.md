@@ -196,8 +196,9 @@ This was also used to debug any structural and styling issues on the fly
 All buttons and links have been accounted for and directs to the right source
 
 ### UI Testing
-| Large Screen - Desktop |                  | No UI issues |
+| UI Testing             |                  |              |
 |------------------------|------------------|--------------|
+| Large Screen - Desktop |                  | No UI issues |
 |                        |                  |              |
 | Phone:                 | iPhone X         | No UI issues |
 |                        | iPhone 8Plus     | No UI issues |
