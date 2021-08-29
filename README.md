@@ -261,7 +261,7 @@ The config files used for this project:
    * [Bootstrap](https://getbootstrap.com/)
    * [ColorTools](https://www.colortools.net/color_complementary.html) for picking complementary and contrasting colours
    * My mentor Spencer for helping me along the way on my first project.
-   * Kevin from Code Institute with help on the edit function in the message section
+   * Code Institute tutors for helping with deployment and functionality issues
    * [Favicon](https://favicon.io/emoji-favicons/flag-wales/) for favicon generator
    * [W3School](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) for back to top button
    * Dev Ed on youtube for tutorial on Javascript
