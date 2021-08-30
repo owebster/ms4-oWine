@@ -9,7 +9,7 @@ var style = {
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
-            color: '#4b0000'
+            color: '#aab7c4'
         }
     },
     invalid: {
