@@ -195,6 +195,9 @@ Password: password
 * Account creation for tracking orders. Log in and log out function.
    * Users are able to create an account at checkout, minimising the need to worry about creating an account before purchasing
    * Order tracking details are also sent by email after checout
+* Error handling:
+   * 404.html added for (page not found) view
+   * 500.html added for (server error) view
 
 ### Manual testing:
 Each feature set was tested on mobile, medium and large screen, natively and also via developer inspection on Chrome and Safari.
@@ -285,6 +288,7 @@ The config files used for this project:
    * [W3School](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) for back to top button
    * Dev Ed on youtube for tutorial on Javascript
    * [Markdown Tables](https://www.tablesgenerator.com/markdown_tables) for generating markdown table template
+   * [Error Handling](https://docs.djangoproject.com/en/3.2/ref/views/)
 
 ### [Back to Top](#an-overview)
 
