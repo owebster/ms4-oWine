@@ -169,6 +169,7 @@ Similar email confirmation is used for emailing order details
 * [AWS](https://aws.amazon.com)
 * Balsamiq
 * SQLite
+* [Stripe](https://stripe.com/en-gb)
 
 ## Feature and Technology Testing
 
@@ -176,6 +177,24 @@ For Admin access to the page to assit with testing:
 
 Username: owebster
 Password: password
+
+### Features:
+* Adaptive design, allowing site to change accordinly to screen sizes
+* Nav bar shrinks to a hamburger design on mobile, all options hidden behind the hamburger in small deisgn screens.
+   * On Medium and Large screen devices the nav is expanded to show different categories.
+      * Each category has a drop down menue to be more specific.
+* The products page adapts between showing products side by side from each other to being single file on small screens.
+* Checkout screen and functions work across multiple devices, including checkout on mobile devices which support on device auto fill.
+   * Supports Stripe secure checkout
+* Admin accounts have the option to add and delete products. Adding products support on device file selection to upload product images.
+   * Via Django's admin page, admins can:
+      * Submit blog posts
+      * Edit products in bulk
+      * Manage user accounts
+* Blog functionality - allows users to comment on products, host Q&As and other general interactions for users with accounts.
+* Account creation for tracking orders. Log in and log out function.
+   * Users are able to create an account at checkout, minimising the need to worry about creating an account before purchasing
+   * Order tracking details are also sent by email after checout
 
 ### Manual testing:
 Each feature set was tested on mobile, medium and large screen, natively and also via developer inspection on Chrome and Safari.
