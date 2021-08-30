@@ -196,6 +196,7 @@ Password: password
    * Users are able to create an account at checkout, minimising the need to worry about creating an account before purchasing
    * Order tracking details are also sent by email after checout
 * Error handling:
+   * 403.html added for (HTTP Forbidden) view
    * 404.html added for (page not found) view
    * 500.html added for (server error) view
 
@@ -203,7 +204,7 @@ Password: password
 Each feature set was tested on mobile, medium and large screen, natively and also via developer inspection on Chrome and Safari.
 Log in functionality
 Create user functionality
-Contact form
+Checkout functionality with Stripe
 User interface and scalability of elements on site
 Blog functionality
 Individual log in functionality for users that are not admins
